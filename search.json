@@ -1,0 +1,14 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | array_to_sentence_string }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | localize: '%d %B %Y'}}",
+      "dateISO"  : "{{ post.date | date_to_xmlschema }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

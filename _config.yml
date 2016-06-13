@@ -1,0 +1,59 @@
+timezone: "America/Sao_Paulo"
+lang: "pt-BR"
+gems: ['jekyll-crosspost-to-medium']
+
+# Site settings
+description: "Memórias, exemplos e o que mais meu dia me reserva" 
+baseurl: "" 
+url: "http://williamthiago.com"  
+
+# User settings
+username: William Thiago
+user_description: "#rainmaker na <a href='http://socialbase.com.br' target='_blank'>SocialBase</a>"
+user_title: "Um #dev #gamer #trainer #rainmaker por ai"
+email: contato@williamthiago.com
+facebook_username: williamthiagoamorim
+twitter_username: williamthiago
+github_username:  williamthiago
+gplus_username:  williamthiago
+disqus_username: williamthiago
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /post/:month-:year/:title
+
+#html proofer
+html_proofer:
+  check_favicon: true
+  assume_extension: true
+  extension: .html
+  check_html: true
+  disable_external: true
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: Home
+    url: /
+  - title: Tags
+    url: /tags
+  - title: Sobre
+    url: /sobre
+
+jekyll-crosspost_to_medium:
+  enabled: false
+  cache: .cache
+  status: draft
+  license: all-rights-reserved
+  text: '<p><i>Esse artigo foi originalmente postado <a href=\"#{url}\" rel=\"canonical\">no meu proprio site</a>.</i></p>'
+  backdate: true
+
+# exclude my node related stuff
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'package.json', 'src', 'node_modules', 'deploy.sh', 'Readme.md', 'initpost.sh', 'gulpfile.js']
+

@@ -1,0 +1,28 @@
+language: ruby
+rvm:
+- 2.2
+cache:
+  bundler: true
+  directories:
+    - node_modules  
+install:
+- bundle install --deployment
+- npm install
+before_script:
+- chmod +x deploy.sh
+script: 
+- gulp build
+- bundle exec jekyll build --config _config.yml,_config-prod.yml
+- ./deploy.sh
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - HTML_FOLDER="./_site/"
+  - GH_REMOTE="https://github.com/williamthiago/williamthiago.github.io/"
+  - secure: Sohm4Wwf37tikDkNLW68lDvUEzPmEj/1irSO2nqcwxDFb4FfC+GJqMLVN1VKgSyVbPK07a8nUPwfE/SYZ0m0lt7xFC6JuM0qL98v0Z8ZSMAuC+mNlZAZsY7ymyUipmP+fN/9w6b+8fakEqw53SgrcMlXLBbAiufp8ISCtQHa7uLKvmg+WM0m+ZLdftHnoKb7f/MPEOk75qfB3rI32VtCJpMDPUPLu7C7dqSof5ShJHe6jg5uXbBrrUaBEmoThlWS3oRII63hJ0rEcizVfHKicC8obIPih7LcAKA+H4kuyB/6Cd++Z2FDPQJkT5usROHzuj6YP0aQmohWJC1bxs6QOkcP9cCiX4j+GQG9RslKD+Ajkxu0CU0d0q8/jxa4DTBLPaaJ2e/S+5madPDMQeIWPBGn/XwRLB8lY79VbZ47S75dtvsCtEfz+KRe6VXHjfcnCM+uReyFd6OwG1EDq7lQlme1ip9f3L1umzUm64MG7s4TtnCsbI+lQ0fbe0Lp/8dmrheuS49jzshL-+flM25oZ/JSSwRZgtJ4SutwuR5iZeHq0LTP5ZfFj3V4dYr4Y0ANRXgHD8jpwEa3ILaKzmWal7tjl67Nydv0x3AP1k92B+UEBU1eOM0uThKx0WhbPRvbRZwQwWqNQEsoQDvGkLWiBq/7SFBZed2RZ+siGjleU5bQ=
+branches:
+  only:
+  - develop
+notifications:
+  email: false
+sudo: false

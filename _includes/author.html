@@ -1,0 +1,13 @@
+<section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" class="img-rounded" src="{{site.baseurl}}/assets/img/blog-author.png" alt="{{site.username}}">
+        <p class="def">
+            Publicado em <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | localize: "%d de %B de %Y" }}</time> por 
+        </p>
+        <h3 class="name">
+            <a itemprop="name" href="{{site.baseurl}}/sobre">{{site.username}}</a>
+        </h3>
+        <p class="desc">{{site.user_description}}</p>
+        <a itemprop="email" class="email" href="mailto:{{site.email}}">{{site.email}}</a>
+    </div>
+</section>

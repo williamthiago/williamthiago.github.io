@@ -1,0 +1,8 @@
+_site
+.sass-cache
+.DS_Store
+node_modules
+assets
+jekyll-metadata
+vendor
+.bundle
