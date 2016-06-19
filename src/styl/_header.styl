@@ -14,7 +14,8 @@ $bg
 // Header Post
 .header-post
 	@extends $bg
-	height 40%
+	+above(cut)
+		height 40%
 	.subheader
 		display table
 		padding 20px
@@ -58,11 +59,12 @@ $bg
 		margin-top -80px
 		display block
 		+above(cut)
-			margin-bottom 0
-			font-size rem(100px)
+			//margin-bottom 0
+			margin-top 10px
+			font-size rem(50px)
 	.site-description
 		font-size rem(20px)
 		display block
 		margin rem(30px) 0
 		+above(cut)
-			font-size rem(40px)
+			font-size rem(25px)
