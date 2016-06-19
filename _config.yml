@@ -23,6 +23,9 @@ markdown: kramdown
 highlighter: rouge
 permalink: /post/:month-:year/:title
 
+# Drafts
+show_drafts: true
+
 #html proofer
 html_proofer:
   check_favicon: true

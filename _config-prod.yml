@@ -1,2 +1,12 @@
+# Drafts
+show_drafts: false
+
+# Crossposting
 jekyll-crosspost_to_medium:
   enabled: true
+
+#minify
+compress_html:
+  clippings: all
+  comments: all
+  profile: false
