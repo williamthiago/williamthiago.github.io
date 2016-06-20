@@ -18,6 +18,9 @@ github_username:  williamthiago
 gplus_username:  williamthiago
 disqus_username: williamthiago
 
+# Analytics
+googleanalytics: ""
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
