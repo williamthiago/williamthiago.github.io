@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Memórias, exemplos e o que mais meu dia me reserva</description>
+    <link>http://williamthiago.com/</link>
+    <atom:link href="http://williamthiago.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Sep 2017 21:11:11 -0300</pubDate>
+    <lastBuildDate>Sun, 10 Sep 2017 21:11:11 -0300</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Promises procedurais</title>
+        <description>&lt;p&gt;Em um grupo que participo, surgiu uma dúvida do tipo “porquê esse código não funciona?”&lt;/p&gt; &lt;p&gt;Para contextualizar, basicamente foi codificado um controller, dependendo de 3+ services, onde cada um retornava um valor para ser usado posteriormente em um cálculo.&lt;/p&gt; &lt;p&gt;Vejamos:&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;calculadorController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;serviceA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;serviceB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;serviceC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// executada assim que cria o controller&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obtemValorA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obtemValorB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obtemValorC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;calcular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// busca o valor A no service A&lt;/span&gt; &lt;span...</description>
+        <pubDate>Sun, 19 Jun 2016 17:23:09 -0300</pubDate>
+        <link>http://williamthiago.com/post/06-2016/promises-procedurais</link>
+        <guid isPermaLink="true">http://williamthiago.com/post/06-2016/promises-procedurais</guid>
+        
+        <category>angular</category>
+        
+        <category>promise</category>
+        
+        <category>codereview</category>
+        
+        
+        <category>angular</category>
+        
+      </item>
+    
+      <item>
+        <title>First Commit</title>
+        <description>&lt;p&gt;Nada melhor que a mensagem do primeiro commit de muiiiiitos repositórios por ai pra representar esse pontapé que escrevo às pressas apenas pra subir o site :D&lt;/p&gt;
+
+&lt;p&gt;Aqui pretendo mostrar o que tenho feito no trabalho, esperando que algum dia alguém se beneficie disso.&lt;/p&gt;
+
+&lt;p&gt;No link &lt;a href=&quot;/sobre&quot;&gt;sobre&lt;/a&gt; tem mais informações sobre mim.&lt;/p&gt;
+
+&lt;p&gt;Anote no seu bookmark! Vai que um dia esse domínio fique famoso…&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 May 2016 22:32:44 -0300</pubDate>
+        <link>http://williamthiago.com/post/05-2016/first-commit</link>
+        <guid isPermaLink="true">http://williamthiago.com/post/05-2016/first-commit</guid>
+        
+        <category>tldr</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
